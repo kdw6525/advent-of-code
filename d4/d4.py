@@ -95,7 +95,7 @@ def solution_2(ws_graph, a_s):
         else:
             d1 = False
 
-        if a.n[2] in ws_graph:
+        if d1 and a.n[2] in ws_graph:
             d2_node = ws_graph[a.n[2]]
             d2 = word_direction(ws_graph, d2_node, "MAS", 5) or word_direction(ws_graph, d2_node, "SAM", 5)
         else:
