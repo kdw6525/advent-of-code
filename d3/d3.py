@@ -30,7 +30,6 @@ def solution_2(f):
     for line in f:
         ops = re.findall(regex_2, line)
         for op in ops:
-            print(op)
             if op[3] == 'do':
                 enabled = True
             elif op[4] == "don't":
